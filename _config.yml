@@ -1,22 +1,22 @@
 # Site settings
-title: Hux Blog
-SEOTitle: 黄玄的博客 | Hux Blog
+title: xiaobiaoge Blog
+SEOTitle: 张占越的博客 | xiaobiaoge Blog
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
-description: "关于前端与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Front-End Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。"
-keyword: "黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, 前端, 设计, 产品, 肖玉, Lynn, 肖玉的男朋友"
-url: "http://huangxuan.me"              # your host, for absolute URL
+email: 1003602700@qq.com
+description: "关于数据库与设计、DBA | 张占越，DBA & mysql Lover，linux Engineer，SA | 这里是 @张占越 的个人博客，与你一起发现更大的世界。"
+keyword: "张占越, xiaobiaoge张占越, zhangzhanyue, 张占越, 京城小表哥, @silence, 张占越的博客, 小表哥 Blog, 博客, 个人网站, 互联网, mysql, 设计, 乔乔的男朋友"
+url: "http://jcxbg.github.io/"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
 RSS: false
-weibo_username:     huxpro
-zhihu_username:     huxpro
-github_username:    huxpro
-#twitter_username:  huxpro
-facebook_username:  huxpro
+weibo_username:     杜尔灬伯特
+zhihu_username:     杜尔灬伯特
+github_username:    jcxbg
+#twitter_username:  
+#facebook_username:  
 
 
 
@@ -50,7 +50,7 @@ kramdown:
 #disqus_username: _your_disqus_short_name_
 
 # Duoshuo settings
-duoshuo_username: huxblog
+duoshuo_username: jcxbg
 # Share component is depend on Comment so we can NOT use share only.
 duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
@@ -62,7 +62,7 @@ duoshuo_share: true                     # set to false if you want to use Commen
 ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_domain: jcxbg.me
 
 
 

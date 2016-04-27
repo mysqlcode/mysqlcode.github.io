@@ -1,6 +1,6 @@
 #Hux Blog
 
-###[View Live Hux Blog &rarr;](http://huxpro.github.io)
+###[View Live zhangzhanyue Blog &rarr;](http://jcxbg.github.io)
 
 ![](http://huangxuan.me/img/blog-desktop.jpg)
 
@@ -21,7 +21,7 @@ So, just edit `_config.yml`, find `highlighter: pygments`, change it to `highlig
 Want to clone a boilerplate instead of my buzz blog? Here comes this!  
 
 ```
-$ git clone git@github.com:Huxpro/huxblog-boilerplate.git
+$ git clone git@https://github.com/jcxbg/jcxbg.github.io.git
 ```
 
 **[View Boilerplate Here &rarr;](http://huangxuan.me/huxblog-boilerplate/)**
