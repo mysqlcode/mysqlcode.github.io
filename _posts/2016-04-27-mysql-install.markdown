@@ -248,9 +248,7 @@ write_buffer = 2M
 
 [mysqlhotcopy]
 interactive-timeout
-
-
-#### (6) 编写配置文件
+```
 
 #### (7) 安装数据库
 
