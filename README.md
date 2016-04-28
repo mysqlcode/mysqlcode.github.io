@@ -1,4 +1,4 @@
-#Hux Blog
+#张占越 Blog
 
 ###[View Live zhangzhanyue Blog &rarr;](http://jcxbg.github.io)
 
@@ -29,7 +29,7 @@ $ git clone git@https://github.com/jcxbg/jcxbg.github.io.git
 
 ## Translation
 
- - ![cn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/China.png) **Chinese (Simplified)**: 感谢 [@BrucZhaoR](https://github.com/BruceZhaoR) 的 [中文翻译 &rarr;](https://github.com/Huxpro/huxpro.github.io/blob/master/README.zh.md)
+ - ![cn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/China.png) **Chinese (Simplified)**: 感谢 [@BrucZhaoR](https://github.com/BruceZhaoR) 的 [中文翻译 &rarr;](https://github.com/Huxpro/jcxbg.github.io/blob/master/README.zh.md)
 
 ## Features
 
@@ -37,7 +37,7 @@ $ git clone git@https://github.com/jcxbg/jcxbg.github.io.git
 
 - Annoyed to delete my blog post after clone or pull? **Boilerplate** comes to help you get started quickly and easily merge update.
 - `-apple-system` is added in font rule, which display beautiful new font **San Francisco** in iOS 9 by default.
-- Fixed [issue#15](https://github.com/Huxpro/huxpro.github.io/issues/15) about code wrap.
+- Fixed [issue#15](https://github.com/Huxpro/jcxbg.github.io/issues/15) about code wrap.
 
 ##### New Feature (V1.5.1)
 
@@ -129,8 +129,8 @@ SEOTitle: Hux Blog			# check out docs for more detail
 description: "Cool Blog"    # ...
 
 # SNS settings      
-github_username: huxpro     # modify this account to yours
-weibo_username: huxpro      # the footer woule be auto-updated.
+github_username: jcxbg     # modify this account to yours
+weibo_username: jcxbg      # the footer woule be auto-updated.
 
 # Build settings
 # paginate: 10              # nums of posts in one page
@@ -285,7 +285,7 @@ There are a number of tasks it performs like minification of the JavaScript, com
 
 #### Header Image
 
-Change header images of any pages or any posts is pretty easy as mentioned above. But, thanks to [issue #6 (in Chinese)](https://github.com/Huxpro/huxpro.github.io/issues/6) asked, **how to make it looks great?**
+Change header images of any pages or any posts is pretty easy as mentioned above. But, thanks to [issue #6 (in Chinese)](https://github.com/Huxpro/jcxbg.github.io/issues/6) asked, **how to make it looks great?**
 
 **Well...it is actually a design issue**, not a coding stuff. It is better that you have basic design knowledge, but not is ok, let me told you how to make it well-designed:
 
