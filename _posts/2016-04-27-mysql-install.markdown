@@ -248,13 +248,16 @@ write_buffer = 2M
 
 [mysqlhotcopy]
 interactive-timeout
-```
+
+
+#### (6) 编写配置文件
 
 #### (7) 安装数据库
 
 ```
 chown -R mysql:mysql /data/mysql/
 /data/mysql/base/scripts/mysql_install_db --defaults-file=/data/mysql/data/my.cnf --basedir=/data/mysql/base --datadir=/data/mysql/data --user=mysql
+
 ```
 
 ####（8）启动数据库
