@@ -2,7 +2,7 @@
 
 ###[View Live zhangzhanyue Blog &rarr;](http://jcxbg.github.io)
 
-![](http://huangxuan.me/img/blog-desktop.jpg)
+![](http://jcxbg.github.io/img/blog-desktop.jpg)
 
 
 ### "Page Build Warning" email
@@ -24,7 +24,7 @@ Want to clone a boilerplate instead of my buzz blog? Here comes this!
 $ git clone git@https://github.com/jcxbg/jcxbg.github.io.git
 ```
 
-**[View Boilerplate Here &rarr;](http://huangxuan.me/huxblog-boilerplate/)**
+**[View Boilerplate Here &rarr;](http://jcxbg.github.io/huxblog-boilerplate/)**
 
 
 ## Translation
@@ -61,7 +61,7 @@ $ git clone git@https://github.com/jcxbg/jcxbg.github.io.git
 
 - Big Improvement to the **Navigation Menu** *(especially in Android)*:  Dropping the old, stuttering, low-performance [Bootstrap collapse.js](http://getbootstrap.com/javascript/#collapse),  replaced with an own wrote, [jank free](http://jankfree.org/) navbar menu in a pretty high-performance implementation of [Google Material Design](https://www.google.com/design/spec/material-design/introduction.html).
 
-<img src="http://huangxuan.me/img/blog-md-navbar.gif" width="320" />
+<img src="http://jcxbg.github.io/img/blog-md-navbar.gif" width="320" />
 
 
 ##### New Feature (V1.2)
@@ -161,7 +161,7 @@ tags:
 
 #### SideBar
 
-![](http://huangxuan.me/img/blog-sidebar.jpg)
+![](http://jcxbg.github.io/img/blog-sidebar.jpg)
 
 Seeing more information may be necessary for you to display, from V1.1, a clean, gorgeous **SideBar** is added for you, which provide more area for displaying possible modules. You can enable *(it is default enable)* this feature by simply config:
 
@@ -221,7 +221,7 @@ friends: [
 
 #### Keynote Layout
 
-![](http://huangxuan.me/img/blog-keynote.jpg)
+![](http://jcxbg.github.io/img/blog-keynote.jpg)
 
 There is a increasing tendency to use Open Web technology to create keynotes, presentations, like Reveal.js, Impress.js, Slides, Prezi etc. I consider a modern blog should have abilities to post these HTML based presentation easily also abilities to play it directly.
 
@@ -230,7 +230,7 @@ Under the hood, a `iframe` is used to include webpage from outer source, so the 
 ```
 ---
 layout:     keynote
-iframe:     "http://huangxuan.me/js-module-7day/"
+iframe:     "http://jcxbg.github.io/js-module-7day/"
 ---
 ```
 
@@ -267,7 +267,7 @@ ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_domain: jcxbg.github.io
 ```
 
 Just checkout the code offered by Google/Baidu, and copy paste here, all the rest is already done for you.

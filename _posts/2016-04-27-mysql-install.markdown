@@ -24,9 +24,7 @@ tags:
 
 #### (2) 创建目录
 
-{% raw %}
-
-```hbs
+```
 mkdir -p /data/mysql/base/
 mkdir -p /data/mysql/data/
 mkdir -p /data/soft/
@@ -37,53 +35,36 @@ mkdir -p /data/mysql/data/log/errlog/
 mkdir -p /data/mysql/data/log/slowlog/
 mkdir -p /data/mysql/data/log/mysql/
 ```
-{% endraw %}
 
 #### (3) 创建mysql用户
 
-{% raw %}
-
-```hbs
+```
 /usr/sbin/groupadd mysql
 /usr/sbin/useradd -s /sbin/nologin -M  -g mysql mysql
 ```
-{% endraw %}
 
 #### (4) 下载软件包
 
-{% raw %}
-
-```hbs
+```
 cd /data/soft/
 wget https://www.percona.com/downloads/Percona-Server-5.6/Percona-Server-5.6.25-73.1/source/tarball/percona-server-5.6.25-73.1.tar.gz
 ```
-{% endraw %}
 
 #### (5) 编译安装
 
-{% raw %}
-
-```hbs
+```
 tar -zxvf percona-server-5.6.25-73.1.tar.gz
-
 cd percona-server-5.6.25-73.1
-
 cmake . -DCMAKE_INSTALL_PREFIX=/data/mysql/base/ -DMYSQL_DATADIR=/data/mysql/data/ -DMYSQL_UNIX_ADDR=/data/mysql/data/mysql.sock -DDEFAULT_CHARSET=utf8 -DDEFAULT_COLLATION=utf8_general_ci  -DWITH_MYISAM_STORAGE_ENGINE=1 -DWITH_INNOBASE_STORAGE_ENGINE=1 -DENABLED_LOCAL_INFILE=1 -DMYSQL_USER=mysql
-
 make
-
 make install
 ```
-{% endraw %}
-
 
 #### (6) 编写配置文件
 
 > vim /data/mysql/data/my.cnf
 
-{% raw %}
-
-```hbs
+```
 [client]
 port =3306
 socket =/data/mysql/data/mysql.sock
@@ -267,24 +248,16 @@ write_buffer = 2M
 
 [mysqlhotcopy]
 interactive-timeout
-
-{% endraw %}
-
+```
 
 #### (7) 安装数据库
 
-{% raw %}
-
-```hbs
-
-chown -R mysql:mysql /data/mysql/
-
-/data/mysql/base/scripts/mysql_install_db --defaults-file=/data/mysql/data/my.cnf --basedir=/data/mysql/base --datadir=/data/mysql/data --user=mysql
-
 ```
-{% endraw %}
+chown -R mysql:mysql /data/mysql/
+/data/mysql/base/scripts/mysql_install_db --defaults-file=/data/mysql/data/my.cnf --basedir=/data/mysql/base --datadir=/data/mysql/data --user=mysql
+```
 
-###（8）启动数据库
+####（8）启动数据库
 
 > /data/mysql/base/bin/mysqld_safe --defaults-file=/data/mysql/data/my.cnf --basedir=/data/mysql/base --datadir=/data/mysql/data --user=mysql &
 
