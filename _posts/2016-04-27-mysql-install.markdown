@@ -18,11 +18,11 @@ tags:
 
 ## 1、编译安装
 
-###（1）安装相关依赖包
+#### (1) 安装相关依赖包
 
 > yum install bison zlib-devel openssl-devel ncurses-devel libxml2-devel curl-devel libjpeg-devel libpng-devel freetype-devel ntp gcc gcc-c++ openldap-devel lrzsz make cmake dialog –y
 
-### (2) 创建目录
+#### (2) 创建目录
 
 {% raw %}
 
@@ -39,16 +39,16 @@ mkdir -p /data/mysql/data/log/mysql/
 ```
 {% endraw %}
 
-### (3) 创建mysql用户
+#### (3) 创建mysql用户
 
 ```js
 /usr/sbin/groupadd mysql
 /usr/sbin/useradd -s /sbin/nologin -M  -g mysql mysql
 ```
-###（4）下载软件包
+#### (4) 下载软件包
 > cd /data/soft/
 > wget https://www.percona.com/downloads/Percona-Server-5.6/Percona-Server-5.6.25-73.1/source/tarball/percona-server-5.6.25-73.1.tar.gz
-###（5）编译安装
+#### (5) 编译安装
 > tar -zxvf percona-server-5.6.25-73.1.tar.gz
 > cd percona-server-5.6.25-73.1
 
@@ -57,10 +57,12 @@ cmake . -DCMAKE_INSTALL_PREFIX=/data/mysql/base/ -DMYSQL_DATADIR=/data/mysql/dat
 ```
 > make
 > make install
-###（6）编写配置文件
+#### (6) 编写配置文件
 > vim /data/mysql/data/my.cnf
 
-```
+{% raw %}
+
+```hbs
 [client]
 port =3306
 socket =/data/mysql/data/mysql.sock
@@ -245,8 +247,10 @@ write_buffer = 2M
 [mysqlhotcopy]
 interactive-timeout
 ```
+{% endraw %}
 
-###（7）安装数据库
+
+#### (7) 安装数据库
 > chown -R mysql:mysql /data/mysql/
 > /data/mysql/base/scripts/mysql_install_db --defaults-file=/data/mysql/data/my.cnf --basedir=/data/mysql/base --datadir=/data/mysql/data --user=mysql
 
