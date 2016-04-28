@@ -46,9 +46,12 @@ mkdir -p /data/mysql/data/log/mysql/
 /usr/sbin/useradd -s /sbin/nologin -M  -g mysql mysql
 ```
 #### (4) 下载软件包
+
 > cd /data/soft/
 > wget https://www.percona.com/downloads/Percona-Server-5.6/Percona-Server-5.6.25-73.1/source/tarball/percona-server-5.6.25-73.1.tar.gz
+
 #### (5) 编译安装
+
 > tar -zxvf percona-server-5.6.25-73.1.tar.gz
 > cd percona-server-5.6.25-73.1
 
@@ -254,16 +257,21 @@ interactive-timeout
 
 
 #### (7) 安装数据库
+
 > chown -R mysql:mysql /data/mysql/
+
 > /data/mysql/base/scripts/mysql_install_db --defaults-file=/data/mysql/data/my.cnf --basedir=/data/mysql/base --datadir=/data/mysql/data --user=mysql
 
 ###（8）启动数据库
+
 > /data/mysql/base/bin/mysqld_safe --defaults-file=/data/mysql/data/my.cnf --basedir=/data/mysql/base --datadir=/data/mysql/data --user=mysql &
 
 ###（9）登录数据库
+
 > /data/mysql/base/bin/mysql -u root -p --socket=/data/mysql/data/mysql.sock --port=3306
 
 ###（10）设置密码
+
 > GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY 'rootpassword' WITH GRANT OPTION;
 > delete from mysql.user where password='';
 > flush privileges;
