@@ -262,11 +262,13 @@ chown -R mysql:mysql /data/mysql/
 ```
 /data/mysql/base/bin/mysqld_safe --defaults-file=/data/mysql/data/my.cnf --basedir=/data/mysql/base --datadir=/data/mysql/data --user=mysql &
 ```
+
 #### (9)登录数据库
 
 ```
 /data/mysql/base/bin/mysql -u root -p --socket=/data/mysql/data/mysql.sock --port=3306
 ```
+
 #### (10)设置密码
 
 ```
