@@ -57,7 +57,9 @@ cmake . -DCMAKE_INSTALL_PREFIX=/data/mysql/base/ -DMYSQL_DATADIR=/data/mysql/dat
 ```
 > make
 > make install
+
 #### (6) 编写配置文件
+
 > vim /data/mysql/data/my.cnf
 
 {% raw %}
@@ -247,6 +249,7 @@ write_buffer = 2M
 [mysqlhotcopy]
 interactive-timeout
 ```
+
 {% endraw %}
 
 
