@@ -24,6 +24,26 @@ tags:
 
 #### (2) 创建目录
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```
 mkdir -p /data/mysql/base/
 mkdir -p /data/mysql/data/
