@@ -33,7 +33,7 @@ tags:
 #!/bin/sh
 #设置用户名和密码
 v_user="root"
-v_password="123qwe"
+v_password="password"
 
 #mysql安装全路径
 MysqlDir=/usr/bin
@@ -123,16 +123,16 @@ MYSQLDIR=/usr/bin
 MYSQL=$MYSQLDIR/mysql
 MYSQL_ADMIN=$MYSQLDIR/mysqladmin
 MYSQL_USER=backup
-MYSQL_PASSWORD=ijuhTTGVFDD4
+MYSQL_PASSWORD=password
 #HOST=`ifconfig  | grep 'inet addr:'| grep -v '127.0.0.1' | cut -d: -f2 | awk '{ print $1}'`
-HOST=10.1.4.85
+HOST=10.10.10.10
 HOSTNAME=`hostname`
 PORT=3306
 MY_CNF=/my/data/percona/my.cnf
 
 MYSQL_CMD="--host=$HOST --user=$MYSQL_USER --password=$MYSQL_PASSWORD --port=$PORT"  
 
-BACKUP_DIR=/misc/backup/mdb72 # 备份的主目录
+BACKUP_DIR=/misc/backup # 备份的主目录
 FULLBACKUP_DIR=$BACKUP_DIR/full # 全库备份的目录
 INCRBACKUP_DIR=$BACKUP_DIR/incre # 增量备份的目录
 
